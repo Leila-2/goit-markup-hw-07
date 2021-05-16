@@ -21,32 +21,32 @@
     <!--Шапка сайта-->
     <header class="page-header">
       <div class="container">
-        <nav class="nav">
-          <a class="link logo" href="./index.html"
-            ><span class="logo-part">Web</span>Studio</a
+        <nav class="nav page-header__nav">
+          <a class="link logo page-header__logo" href="./index.html"
+            ><span class="logo__logo-part">Web</span>Studio</a
           >
           <ul class="nav list">
-            <li class="nav-item">
-              <a class="link nav" href="./index.html">Студия</a>
+            <li class="nav__item">
+              <a class="link nav current" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item">
-              <a class="link nav current" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a class="link nav" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-item"><a class="link nav" href="">Кoнтакты</a></li>
+            <li class="nav__item"><a class="link nav" href="">Кoнтакты</a></li>
           </ul>
         </nav>
         <ul class="list contacts">
-          <li class="contacts-item">
-            <a class="link contacts-link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon">
+          <li class="contacts__item">
+            <a class="link contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon">
                 <use href="./images/svg/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts-item">
-            <a class="link contacts-link" href="tel:+380961111111">
-              <svg class="contacts-icon phone">
+          <li class="contacts__item">
+            <a class="link contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon contacts__icon-phone">
                 <use href="./images/svg/sprite.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -55,32 +55,40 @@
         </ul>
       </div>
     </header>
+    <!-- Main -->
     <main>
       <section class="section">
         <div class="container">
           <h1 class="hidden-title">Портфолио</h1>
-          <ul class="list card-set menu-item">
+          <ul class="list card-set button-menu">
             <li class="menu">
-              <button type="button" class="button-menu default-btn">Все</button>
+              <button
+                type="button"
+                class="button-menu__item button-menu__item--default-btn"
+              >
+                Все
+              </button>
             </li>
             <li class="menu">
-              <button type="button" class="button-menu">Веб-сайты</button>
+              <button type="button" class="button-menu__item">Веб-сайты</button>
             </li>
             <li class="menu">
-              <button type="button" class="button-menu">Приложения</button>
+              <button type="button" class="button-menu__item">
+                Приложения
+              </button>
             </li>
             <li class="menu">
-              <button type="button" class="button-menu">Дизайн</button>
+              <button type="button" class="button-menu__item">Дизайн</button>
             </li>
             <li class="menu">
-              <button type="button" class="button-menu">Маркетинг</button>
+              <button type="button" class="button-menu__item">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="list card-set">
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+          <ul class="list card-set portfolio">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img1.jpg"
                     alt="Технокряк"
@@ -93,16 +101,16 @@
                   </p>
                 </div>
 
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Технокряк</h2>
-                  <p class="portfolio-item">Веб-сайт</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Технокряк</h2>
+                  <p class="portfolio__item">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img2.jpg"
                     alt="Постер New Orlean vs Golden Star"
@@ -114,18 +122,18 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="portfolio-item">Дизайн</p>
+                  <p class="portfolio__item">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img3.jpg"
                     alt="Ресторан Seafood"
@@ -137,15 +145,15 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Ресторан Seafood</h2>
-                  <p class="portfolio-item">Приложение</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Ресторан Seafood</h2>
+                  <p class="portfolio__item">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img4.jpg"
                     alt="Проект Prime"
@@ -157,15 +165,15 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Проект Prime</h2>
-                  <p class="portfolio-item">Маркетинг</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Проект Prime</h2>
+                  <p class="portfolio__item">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img5.jpg"
                     alt="Проект Boxes"
@@ -177,15 +185,15 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Проект Boxes</h2>
-                  <p class="portfolio-item">Приложение</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Проект Boxes</h2>
+                  <p class="portfolio__item">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img6.jpg"
                     alt="Inspiration has no Borders"
@@ -197,15 +205,15 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Inspiration has no Borders</h2>
-                  <p class="portfolio-item">Веб-сайт</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Inspiration has no Borders</h2>
+                  <p class="portfolio__item">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img7.jpg"
                     alt="Издание Limited Edition"
@@ -217,15 +225,15 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Издание Limited Edition</h2>
-                  <p class="portfolio-item">Дизайн</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Издание Limited Edition</h2>
+                  <p class="portfolio__item">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img8.jpg"
                     alt="Проект LAB"
@@ -237,15 +245,15 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Проект LAB</h2>
-                  <p class="portfolio-item">Приложения</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Проект LAB</h2>
+                  <p class="portfolio__item">Приложения</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="focused-card">
-                <div class="portfolio-discription">
+            <li class="portfolio__card">
+              <a href="" class="portfolio__card--focused">
+                <div class="portfolio__discription">
                   <img
                     src="./images/portfolio/img9.jpg"
                     alt="Growing Business"
@@ -257,9 +265,9 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-text">
-                  <h2 class="portfolio-tittle">Growing Business</h2>
-                  <p class="portfolio-item">Маркетинг</p>
+                <div class="portfolio__text">
+                  <h2 class="portfolio__tittle">Growing Business</h2>
+                  <p class="portfolio__item">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -269,22 +277,22 @@
     </main>
 
     <!-- Футер -->
-    <footer class="dark-bg footer">
+    <footer class="footer--dark-bg footer">
       <div class="container">
-        <div class="footer-container">
-          <div class="address-container">
-            <a class="link logo white" href="./index.html"
-              ><span class="logo-part">Web</span>Studio</a
+        <div class="footer__container">
+          <div class="footer__address-container">
+            <a class="link logo logo--white" href="./index.html"
+              ><span class="logo__logo-part">Web</span>Studio</a
             >
-            <address class="address">
-              <p class="text address">г. Киев, пр-т Леси Украинки, 26</p>
+            <address class="footer__address">
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
               <ul class="list">
-                <li class="footer-item">
+                <li class="footer__item">
                   <a class="link" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="footer-item">
+                <li class="footer__item">
                   <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
               </ul>
@@ -292,72 +300,72 @@
           </div>
           <div class="join-container">
             <h3 class="third-title">Присоединяйся</h3>
-            <ul class="list social-icons-footer">
-              <li class="social-icons-item">
+            <ul class="list footer__social-icons">
+              <li class="footer__social-item">
                 <a
                   href=""
-                  class="footer-icons-link"
+                  class="footer__social-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="footer-icons-svg">
+                  <svg class="footer__social-svg">
                     <use href="./images/svg/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icons-item">
+              <li class="footer__social-item">
                 <a
                   href=""
-                  class="footer-icons-link"
+                  class="footer__social-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="footer-icons-svg">
+                  <svg class="footer__social-svg">
                     <use href="./images/svg/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icons-item">
+              <li class="footer__social-item">
                 <a
                   href=""
-                  class="footer-icons-link"
+                  class="footer__social-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="footer-icons-svg">
+                  <svg class="footer__social-svg">
                     <use href="./images/svg/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icons-item">
+              <li class="footer__social-item">
                 <a
                   href=""
-                  class="footer-icons-link"
+                  class="footer__social-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="footer-icons-svg">
+                  <svg class="footer__social-svg">
                     <use href="./images/svg/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-send-container">
+          <div class="footer__send-container">
             <div>
               <h3 class="third-title">Подпишись на рассылку</h3>
               <label>
                 <input
-                  class="footer-input"
+                  class="footer__input"
                   type="text"
-                  name="footer-input"
+                  name="footer__input"
                   placeholder="E-mail"
                 />
               </label>
             </div>
             <button type="submit" class="button">
               Подписаться
-              <svg class="icon-send">
+              <svg class="footer__icon-send">
                 <use href="./images/svg/sprite.svg#icon-send"></use>
               </svg>
             </button>
