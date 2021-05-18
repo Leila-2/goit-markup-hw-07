@@ -1,0 +1,20 @@
+.page-header {
+  border: 1px solid #ececec;
+
+  &__nav {
+    margin-right: auto;
+    align-items: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  & .list.contacts {
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: 93px;
+  }
+}
