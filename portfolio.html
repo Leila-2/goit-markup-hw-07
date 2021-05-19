@@ -20,19 +20,25 @@
   <body>
     <!--Шапка сайта-->
     <header class="page-header">
-      <div class="container">
-        <nav class="nav page-header__nav">
-          <a class="link logo page-header__logo" href="./index.html"
+      <div class="container page-header__container">
+        <nav class="page-header__nav">
+          <a class="logo" href="./index.html"
             ><span class="logo__logo-part">Web</span>Studio</a
           >
           <ul class="nav list">
             <li class="nav__item">
-              <a class="link nav current" href="./index.html">Студия</a>
+              <a class="link nav__link" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="link nav" href="./portfolio.html">Портфолио</a>
+              <a
+                class="link nav__link nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav__item"><a class="link nav" href="">Кoнтакты</a></li>
+            <li class="nav__item">
+              <a class="link nav__link" href="">Кoнтакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="list contacts">

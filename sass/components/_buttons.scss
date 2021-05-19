@@ -25,4 +25,7 @@
   &:focus {
     background-color: var(--accent-color);
   }
+  &--submit-btn {
+    display: inline-block;
+  }
 }
