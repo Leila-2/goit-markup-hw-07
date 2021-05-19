@@ -1,3 +1,7 @@
+.contacts {
+  display: flex;
+}
+
 .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -6,6 +10,18 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  line-height: 1.43;
+  font-weight: 500;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .contacts__icon {
   width: 16px;
@@ -22,8 +38,8 @@
     height: 16px;
   }
 
-  .link:hover &,
-  .link:focus & {
+  .contacts__link:hover &,
+  .contacts__link:focus & {
     fill: currentColor;
   }
 }

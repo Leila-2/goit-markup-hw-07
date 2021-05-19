@@ -46,3 +46,7 @@
 .footer__address-container {
   margin-right: 70px;
 }
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--accent-color);
+}
