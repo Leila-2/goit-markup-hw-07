@@ -618,13 +618,15 @@ a {
 }
 
 /* Портфолио */
-.button-menu {
+.filters {
   justify-content: center;
   margin-bottom: 50px;
   margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.button-menu__item {
+.filters__button {
   background: var(--secondary-bg);
   border-radius: 4px;
   font-family: Roboto;
@@ -642,33 +644,33 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
-.button-menu__item--default-btn {
+.filters__button--default-btn {
   background: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-menu__item:hover, .button-menu__item:focus {
+.filters__button:hover, .filters__button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.menu {
+.filters__item {
   text-align: center;
 }
 
-.menu:not(:last-child) {
+.filters__item:not(:last-child) {
   margin-right: 9px;
 }
 
-.menu-item {
+.filters__item-item {
   justify-content: center;
   margin-bottom: 50px;
   margin-right: 0;
 }
 
-.portfolio__text {
+.portfolio__box {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -684,12 +686,12 @@ a {
   margin-bottom: 0;
 }
 
-.portfolio__discription {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__item {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -716,13 +718,13 @@ a {
   margin-bottom: 0;
 }
 
-.portfolio__card--focused {
+.portfolio__link {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__card--focused:focus, .portfolio__card--focused:hover {
+.portfolio__link:focus, .portfolio__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -748,8 +750,8 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__card--focused:hover .overlay,
-.portfolio__card--focused:focus .overlay {
+.portfolio__link:hover .overlay,
+.portfolio__link:focus .overlay {
   opacity: 1;
   transform: translateY(0);
 }
